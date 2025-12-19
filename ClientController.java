@@ -1,10 +1,12 @@
+import java.util.List;
+
 public class ClientController implements Observador {
 	private PedidoDAO _pedidoDAO;
 	private ProductoDAO _productoDAO;
-	private EstrategiaValidación _validador;
+	private EstrategiaValidacion_ _validador;
 	private Object _attribute;
 	public ProveedorFacade _unnamed_ProveedorFacade_;
-	public EstrategiaValidación_ _unnamed_EstrategiaValidación__;
+	public EstrategiaValidacion_ _unnamed_EstrategiaValidacion__;
 	public VentanaConsultarProductos _unnamed_VentanaConsultarProductos_;
 	public VentanaConfirmarModificacion _unnamed_VentanaConfirmarModificacion_;
 	public VentanaSolicitarPedido _unnamed_VentanaSolicitarPedido_;

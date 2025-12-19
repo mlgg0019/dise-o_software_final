@@ -1,3 +1,5 @@
+import java.util.Date;
+
 public class PedidoDTO {
 	private int _idPedido;
 	private Date _fecha;

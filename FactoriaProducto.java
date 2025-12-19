@@ -1,5 +1,5 @@
-public class FactoríaProducto {
-	public CatálogoProductos _unnamed_CatálogoProductos_;
+public class FactoriaProducto {
+	public CatalogoProductos _unnamed_CatalogoProductos_;
 
 	public Producto crearProducto(Object aDatos) {
 		throw new UnsupportedOperationException();

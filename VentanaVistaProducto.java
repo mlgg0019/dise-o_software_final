@@ -1,3 +1,5 @@
+import java.awt.*;
+
 public class VentanaVistaProducto {
 	private Label _tituloProductoLabel;
 	private Button _botonVolver;

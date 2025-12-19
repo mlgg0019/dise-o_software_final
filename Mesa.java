@@ -1,7 +1,7 @@
 import java.util.Vector;
 
 public class Mesa {
-	private Object _número;
+	private Object _numero;
 	private Object _capacidad;
 	public Restaurante _unnamed_Restaurante_;
 	public Vector<Reserva> _unnamed_Reserva_ = new Vector<Reserva>();

@@ -1,3 +1,5 @@
+import java.awt.*;
+
 public class VentanaConsultarProductos {
 	private Label _tituloLabel;
 	private Table _tablaProductos;

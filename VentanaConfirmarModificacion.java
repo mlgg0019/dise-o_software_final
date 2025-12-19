@@ -1,3 +1,5 @@
+import java.awt.*;
+
 public class VentanaConfirmarModificacion {
 	private Label _tituloLabel;
 	private Label _mensajeLabel;

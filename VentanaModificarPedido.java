@@ -1,3 +1,5 @@
+import java.awt.*;
+
 public class VentanaModificarPedido {
 	private ComboBox _proveedorComboBox;
 	private Table _tablaProductos;

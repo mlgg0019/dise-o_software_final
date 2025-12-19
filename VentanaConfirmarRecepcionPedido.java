@@ -1,3 +1,5 @@
+import java.awt.*;
+
 public class VentanaConfirmarRecepcionPedido {
 	private Label _mensajeLabel;
 	private Button _botonOK;
