@@ -4,8 +4,10 @@ public class LineaPedidoDTO {
     private int idProducto;
     private int cantidad;
 
-    // Constructor vacío y con campos
+    // Constructor vacío
     public LineaPedidoDTO() {}
+
+    //Constructor con campos
     public LineaPedidoDTO(int id, int cant) {
         this.idProducto = id;
         this.cantidad = cant;

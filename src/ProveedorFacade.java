@@ -7,7 +7,7 @@ public class ProveedorFacade {
 	 * Comunica al proveedor un nuevo pedido o una modificación.
 	 * @param aPedido El pedido completo (Entidad).
 	 */
-	public void enviarSolicitud(Object aPedido) { // Mantengo Object por compatibilidad con tu archivo, pero hacemos cast
+	public void enviarSolicitud(Object aPedido) {
 		if (aPedido instanceof Pedido) {
 			Pedido p = (Pedido) aPedido;
 			System.out.println("FACADE (PROVEEDOR): Recibida solicitud de pedido ID: " + p.getID() + ". Procesando envío...");

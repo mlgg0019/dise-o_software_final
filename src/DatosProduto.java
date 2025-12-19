@@ -1,28 +1,28 @@
 package src;
 
 public class DatosProduto {
-	// Atributos
+
 	private int _id;
 	private String _nombre;
 	private String _descripcion;
 	private int _cantidad;
 	private int _stockMinimo;
 
-	// Referencia al DAO (si la necesitas, aunque en un DTO puro no suele ir)
+	// Referencia al DAO
 	public ProductoDAO _unnamed_ProductoDAO_;
 
-	// --- 1. Constructor Vacío (Importante para frameworks) ---
+	// Constructor vacío
 	public DatosProduto() {
 	}
 
-	// --- 2. Constructor con Argumentos (Para crear objetos rápido en los Tests) ---
+	//Constructor con argumentos
 	public DatosProduto(int id, String nombre, int cantidad) {
 		this._id = id;
 		this._nombre = nombre;
 		this._cantidad = cantidad;
 	}
 
-	// --- 3. Getters y Setters (Para que el Controlador pueda leer/escribir) ---
+	//Getters y Setters
 
 	public int getId() {
 		return _id;

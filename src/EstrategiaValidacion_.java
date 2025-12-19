@@ -15,10 +15,7 @@ public class EstrategiaValidacion_ {
 			return false;
 		}
 
-		// 2. Verificar reglas específicas (Simulación)
-		// Por ejemplo: que tenga al menos un producto, que el total sea positivo, etc.
-		// Como PedidoDTO en tu código tiene campos privados sin getters visibles aquí,
-		// asumiremos para el ejemplo que es válido si existe.
+		// Verificar reglas específicas (Simulacion ) Por ejemplo: que tenga al menos un producto, que el total sea positivo, etc.
 
 		System.out.println("VALIDACIÓN: Datos del pedido verificados correctamente.");
 		return true;

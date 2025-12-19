@@ -3,39 +3,32 @@ package src;
 import java.util.Vector;
 
 public class Pedido {
-	// --- Atributos Originales (generados por Visual Paradigm) ---
 	private int _iD;
 	private String _estado;
 
-	// Relaciones públicas generadas (las mantenemos para compatibilidad)
+	// Relaciones generadas
 	public Observador _unnamed_Observador_;
 	public PedidoDAO _unnamed_PedidoDAO_;
 	public Proveedor _unnamed_Proveedor_;
 
-	// Lista de productos (inicializada para evitar NullPointerException)
+	// Lista de productos
 	public Vector<Producto> _productos = new Vector<Producto>();
 
-	// --- Constructores ---
-
-	/**
-	 * Constructor vacío.
-	 * Inicializa el estado por defecto.
-	 */
+	//Constructor vacio
 	public Pedido() {
 		this._estado = "PENDIENTE";
 	}
 
-	/**
-	 * Constructor que crea un Pedido a partir de un DTO.
-	 * Usado en la operación "Solicitar Pedido" (Alta).
-	 */
+
+
+	//Constructor que crea un Pedido a partir de un DTO.
 	public Pedido(PedidoDTO datos) {
 		this._estado = "PENDIENTE";
 		// Aquí mapearíamos los productos si el DTO los trae
-		// Por ejemplo: cargarProductosDesdeDTO(datos.getListaProductos());
+
 	}
 
-	// --- Getters y Setters ---
+	//  Getters y Setters
 
 	public int getID() {
 		return _iD;
@@ -61,7 +54,7 @@ public class Pedido {
 		this._productos = productos;
 	}
 
-	// --- Métodos de Lógica de Negocio ---
+	// Métodos de Lógica de Negocio
 
 	/**
 	 * Actualiza los datos del pedido con la nueva información del DTO.
@@ -69,16 +62,13 @@ public class Pedido {
 	 */
 	public void setDatos(PedidoDTO nuevosDatos) {
 		// Actualizamos los campos permitidos
-		// Nota: El ID y el Estado generalmente no se cambian aquí, sino por separado
 
-		// Ejemplo: Si el DTO tuviera lista de productos nueva, la actualizamos
-		// this._productos.clear();
-		// ... lógica para añadir nuevos productos ...
+		// Ejemplo: Si el DTO tuviera lista de productos nueva, la actualizamos (this._productos.clear();)
 
 		System.out.println("PEDIDO: Datos actualizados para el pedido ID " + this._iD);
 	}
 
-	// Método auxiliar para añadir productos fácilmente (útil para tests)
+	// Metodo auxiliar para añadir productos
 	public void agregarProducto(Producto p) {
 		this._productos.add(p);
 	}

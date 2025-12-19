@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class PedidoDAO {
-	// Simulación de BBDD
+	// Simulacion de BBDD en memoria
 	private Map<Integer, Pedido> bdd = new HashMap<>();
 	private int idGen = 1;
 
@@ -27,7 +27,7 @@ public class PedidoDAO {
 		}
 	}
 
-	// Método necesario para refrescar la lista
+	// Metodo para refrescar la lista
 	public List<Pedido> obtenerTodos() {
 		return new ArrayList<>(bdd.values());
 	}
